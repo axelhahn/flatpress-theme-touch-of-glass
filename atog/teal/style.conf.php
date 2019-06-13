@@ -21,7 +21,7 @@
  * ___________________________________________________________________________
  * 
  * Style Name: Teal
- * Style URI: https://www.axel-hahn.de/
+ * Style URI: https://github.com/axelhahn/flatpress-theme-touch-of-glass
  * Description: Axels theme Touch Of Glass in a warmer, teal color.
  * Version: 0.876
  * Author: Axel Hahn

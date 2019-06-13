@@ -17,18 +17,18 @@
  *   |_______|__||___._|_____|_____|                          
  * ___________________________________________________________________________
  * 
- * Theme Name: Axels Touch Of Glass
- * Theme URI: https://www.axel-hahn.de/
+ * Theme Name: Axels theme Touch Of Glass
+ * Theme URI: https://github.com/axelhahn/flatpress-theme-touch-of-glass
  * Description: Axels theme Touch Of Glass.<br>Based on Leggero's theme code.<br>1, 2 or 3 colums in one theme.<br><br>Check its <a href="admin.php?p=themes&action=style">styles</a> too :-)
  * Version: 0.876
  * Author: Axel Hahn
  * Author URI: https://www.axel-hahn.de/
  * 
  */
-$theme ['name'] = 'afpdefault';
+$theme ['name'] = 'atog';
 $theme ['author'] = 'Axel Hahn';
 $theme ['www'] = 'https://www.axel-hahn.de/';
-$theme ['description'] = 'Axels Touch Of Glass';
+$theme ['description'] = 'Axels theme Touch Of Glass';
 
 $theme ['version'] = 0.705;
 

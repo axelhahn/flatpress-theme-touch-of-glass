@@ -33,7 +33,7 @@ This theme offers a clean blog like frontend. This theme was made because
 
 ## Installation
 
-- Copy the theme folder below ./fp-interface/themes/
+- Copy the theme folder "atog" below ./fp-interface/themes/
 - Go to the admin of flatpress -> theme and select the theme "Axel's theme A Touch Of Glass" to activate it
 - optionally select a wanted style
 

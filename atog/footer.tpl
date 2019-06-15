@@ -18,7 +18,7 @@
 			
 			<p>
                             This blog is proudly powered by <a href="https://www.flatpress.org/">FlatPress</a>.
-                            The theme &quot;<a href="https://github.com/axelhahn/flatpress-theme-touch-of-glass">Touch Of Glass</a>&quot; 
+                            The theme &quot;<a href="https://github.com/axelhahn/flatpress-theme-touch-of-glass">A Touch Of Glass</a>&quot; 
                             was made by <a href="https://www.axel-hahn.de/">Axel Hahn</a>.
 			</p>
 		</div> <!-- end of #footer -->

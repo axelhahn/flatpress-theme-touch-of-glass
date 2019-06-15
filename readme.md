@@ -4,8 +4,8 @@
 
 ## Inroduction
 
-This is a theme for the blog software flatpress. Its code is based on Leggero
-theme. Thanks go to NoWhereMan and Drudo!!
+This is a theme for the blog software flatpress (https://www.flatpress.org/). 
+My theme is based on the code of Leggero theme. Thanks go to NoWhereMan and Drudo!!
 
 This theme offers a clean blog like frontend. This theme was made because
 - I wanted a larger font size and 
@@ -21,7 +21,7 @@ This theme offers a clean blog like frontend. This theme was made because
   - top menu bar for static widget "menu"
   - left column
   - right column
-- integrated icon set fontawesome 5.8
+- integrated icon set fontawesome 5.8 (using CDNJS)
 - header with search field and links to RSS feeds
 - frontend widgets get an icon in header
 - the selected category filter or archive filter is highligted in the frontend widgets

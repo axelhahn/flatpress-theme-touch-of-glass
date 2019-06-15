@@ -18,7 +18,7 @@
 		
 				
 		</div>
-                        <div style="clear: both;"></div>
+                <div style="clear: both;"></div>
 		
 	
 {include file=footer.tpl}

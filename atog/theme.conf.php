@@ -1,25 +1,21 @@
 <?php
 /*
  * ___________________________________________________________________________
- *    _______               __ __                             
- *   |   _   |.--.--.-----.|  |  |.-----.                     
- *   |       ||_   _|  -__||  ||_||__ --|                     
- *   |___|___||__.__|_____||__|   |_____|                     
- *                                                          
- *    _______                    __         _______   ___     
- *   |_     _|.-----.--.--.----.|  |--.    |       |.'  _|    
- *     |   |  |  _  |  |  |  __||     |    |   -   ||   _|    
- *     |___|  |_____|_____|____||__|__|    |_______||__|      
- *                                                          
- *    _______ __                                              
- *   |     __|  |.---.-.-----.-----.                          
- *   |    |  |  ||  _  |__ --|__ --|                          
- *   |_______|__||___._|_____|_____|                          
+ * 
+ *        Axels theme
+ *        _______      _______                    __       
+ *       |   _   |    |_     _|.-----.--.--.----.|  |--.   
+ *       |       |      |   |  |  _  |  |  |  __||     |   
+ *       |___|___|      |___|  |_____|_____|____||__|__|   
+ *        _______   ___      _______ __                    
+ *       |       |.'  _|    |     __|  |.---.-.-----.-----.
+ *       |   -   ||   _|    |    |  |  ||  _  |__ --|__ --|
+ *       |_______||__|      |_______|__||___._|_____|_____|
  * ___________________________________________________________________________
  * 
- * Theme Name: Axels theme Touch Of Glass
+ * Theme Name: Axels theme A Touch Of Glass
  * Theme URI: https://github.com/axelhahn/flatpress-theme-touch-of-glass
- * Description: Axels theme Touch Of Glass.<br>Based on Leggero's theme code.<br>1, 2 or 3 colums in one theme.<br><br>Check its <a href="admin.php?p=themes&action=style">styles</a> too :-)
+ * Description: Based on Leggero's theme code.<br>You get 1, 2 or 3 colums in a single theme. What *I* ever missed: it marks archive or category filters.<br>Select your favourite <a href="admin.php?p=themes&action=style">style</a> :-)
  * Version: 0.876
  * Author: Axel Hahn
  * Author URI: https://www.axel-hahn.de/

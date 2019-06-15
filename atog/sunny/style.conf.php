@@ -1,6 +1,7 @@
+<?php
 /*
  * ___________________________________________________________________________
- *
+ * 
  *        Axels theme
  *        _______      _______                    __       
  *       |   _   |    |_     _|.-----.--.--.----.|  |--.   
@@ -12,54 +13,23 @@
  *       |_______||__|      |_______|__||___._|_____|_____|
  * ___________________________________________________________________________
  * 
- * global.css
+ * S U N N Y
  * ___________________________________________________________________________
  * 
-*/
+ * Style Name: Sunny
+ * Style URI: https://github.com/axelhahn/flatpress-theme-touch-of-glass
+ * Description: Axels theme A Touch Of Glass in the sun
+ * Version: 0.876
+ * Author: Axel Hahn
+ * Author URI: https://www.axel-hahn.de/
+ */
+$style ['name'] = 'sunny';
+$style ['author'] = 'Axel Hahn';
+$style ['www'] = 'https://www.axel-hahn.de/';
 
+$style ['version'] = 0.705;
 
-.alignleft { float: left }
-
-.alignright { float: right }
-
-/* ===== NOTIFICATION ===== */
-
-#main ul.msgs, ul.msgs {
-    margin: 2em 0;
-    padding: 1em 2em;
-    list-style: none;
-    border: 2px solid;
-    border-left: 20px solid;
-    border-radius: 0.5em;
-}
-
-#main ul.msgs li, ul.msgs li{
-}
-
-.errors {
-    color: #901d1d;
-    background: #fcc;
-}
-
-.errors a {
-    color: #901d1d;
-    text-decoration: underline;
-    font-weight: normal
-}
-
-.notifications,.enabled {
-    color : #1d901d;
-    background: #ddffdd
-}
-
-.warnings {
-    color : #8a7802;
-    background: #fffdd5;
-
-}
-
-.field-error {
-    border: red 2px solid;
-    background: #fdd
-}
-
+$style ['style_def'] = 'style.css';
+$style ['style_admin'] = 'admin.css';
+$style ['style_print'] = 'print.css';
+$style ['style'] = 'default';

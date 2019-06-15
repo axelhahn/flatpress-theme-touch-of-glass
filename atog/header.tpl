@@ -12,7 +12,11 @@
 	<meta name="Robots" content="noindex, follow">
 	{/if}
         
+        <!--
         <link media="screen" href="{$flatpress.themeurl}/../../_shared/vendor/font-awesome/5.8.2/css/all.min.css" type="text/css" rel="stylesheet" />
+        -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+        
         <link media="screen" href="{$flatpress.themeurl}/../../_shared/res/common.css" type="text/css" rel="stylesheet" />
         <link media="screen" href="{$flatpress.themeurl}/../../_shared/res/globals.css" type="text/css" rel="stylesheet" />
         <link media="screen" href="{$flatpress.themeurl}/../../_shared/res/column.css" type="text/css" rel="stylesheet" />
@@ -24,7 +28,6 @@
 </head>
 <body>
 	<div id="body-container">
-
 		<div id="head">
                         
                         <div style="float: right; text-align: right;" class="noprint">

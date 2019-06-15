@@ -37,3 +37,10 @@ This theme offers a clean blog like frontend. This theme was made because
 - Go to the admin of flatpress -> theme and select the theme "Axel's theme A Touch Of Glass" to activate it
 - optionally select a wanted style
 
+## Screenshots
+
+![Client](atog/blue/preview.png "Blue (default skin)")
+![Client](atog/red/preview.png "Red")
+![Client](atog/sunny/preview.png "Sunny")
+![Client](atog/teal/preview.png "Teal")
+

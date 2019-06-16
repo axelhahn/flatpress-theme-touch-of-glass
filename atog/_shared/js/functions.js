@@ -12,7 +12,7 @@
  *       |_______||__|      |_______|__||___._|_____|_____|
  * ___________________________________________________________________________
  * 
- * javascript funktions
+ * javascript functions
  * ___________________________________________________________________________
  */
 
@@ -23,7 +23,11 @@ var aDivs={
 };
 
 
-
+/**
+ * get link object in the category widget that contains the currently
+ * filtered category (and if there is one)
+ * @returns {NodeList|getCategoryLink.aLinks|Boolean}
+ */
 function getCategoryLink(){
     var selector='';
     
@@ -47,38 +51,9 @@ function getCategoryLink(){
 }
 
 
-function setHeaderLabel(sLabel){
-    var o=document.getElementById('headerfilter');
-    if(o && sLabel){
-        o.innerHTML=sLabel;
-        return true;
-    }
-    return false;
-}
-
 /**
- *
- */
-function setActive(sDivId, sParam, sParamPretty){
-    var aLinks=document.querySelectorAll('#'+sDivId+' a');
-
-    var regex1a = new RegExp(sParam+"$");
-    var regex1b = new RegExp(sParam+"&");
-    var regex2 = new RegExp('/'+sParamPretty+"/$", "i");
-
-    for(var i=0; i<aLinks.length; i++){
-        if((regex1a.test(aLinks[i].href))
-            || (regex1b.test(aLinks[i].href))
-            || (regex2.test(aLinks[i].href))
-        ) {
-            aLinks[i].className='active';
-            setHeaderLabel(aLinks[i].innerHTML);
-        }
-    }
-}
-
-/**
- * highlight category and archive of a displayed single item
+ * highlight category and archive of a displayed single item in the widget
+ * boxes; on its link objects the css class "mark" will be added.
  * @param  {string}  entry; i.e. "entry190521-083200"
  */
 function highlightItem(entry){
@@ -120,7 +95,11 @@ function highlightItem(entry){
     
 }
 
-
+/**
+ * highlight the "menu bar" (static page) - it finds a link that is equal
+ * the current url (location.href) and adds the css class "active"
+ * @returns {undefined}
+ */
 function highlightMenubar(){
     var aLinksMenu=document.querySelectorAll('#menubar a');
     for(var k=0; k<aLinksMenu.length; k++){
@@ -132,9 +111,49 @@ function highlightMenubar(){
     }
 }
 
+/**
+ * put a text into a dom object named headerfilter (which is in the top header
+ * of the theme - see header.tpl)
+ * @param {type} sLabel
+ * @returns {Boolean}
+ */
+function setHeaderLabel(sLabel){
+    var o=document.getElementById('headerfilter');
+    if(o && sLabel){
+        o.innerHTML=sLabel;
+        return true;
+    }
+    return false;
+}
+
+/**
+ * 
+ */
+function setActive(sDivId, sParam, sParamPretty){
+    var aLinks=document.querySelectorAll('#'+sDivId+' a');
+
+    var regex1a = new RegExp(sParam+"$");
+    var regex1b = new RegExp(sParam+"&");
+    var regex2 = new RegExp('/'+sParamPretty+"/$", "i");
+
+    for(var i=0; i<aLinks.length; i++){
+        if((regex1a.test(aLinks[i].href))
+            || (regex1b.test(aLinks[i].href))
+            || (regex2.test(aLinks[i].href))
+        ) {
+            aLinks[i].className='active';
+            setHeaderLabel(aLinks[i].innerHTML);
+        }
+    }
+}
+
 
 // -----
 
+/**
+ * init function on page load
+ * @returns {undefined}
+ */
 function pageInit(){
     var oLinkCat=getCategoryLink();
     if(oLinkCat){

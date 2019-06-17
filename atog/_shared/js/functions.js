@@ -17,11 +17,74 @@
  */
 
 
-var aDivs={
+var aDomNames={
     'cat':'widget-categories',
+    'catInput':'eCatFilter',
     'archive':'widget-archives'
 };
 
+	/*
+	**************************************
+	* String.highlight v1.0              *
+	* Autor: Carlos R. L. Rodrigues      *
+	**************************************
+	*/
+	// http://jsfromhell.com/string/highlight
+	String.prototype.highlight = function(f, c, i){
+	    var r = this, t = /([(){}|*+?.,^$\[\]\\])/g, i = !i ? "i" : "", rf = function(t, i){
+	        return r.lastIndexOf("<", i) > r.lastIndexOf(">", i) ? t : c(t, p);
+	    };
+	    for(var p = -1, l = (f = f instanceof Array ? f : [f]).length; ++p < l;)
+	        r = r.replace(new RegExp(f[p].replace(t, "\\\$1"), "gm" + i), rf);
+	    return r;
+	}
+	function c(s, i){
+		return '<span class="bg' + i + '">' + s + '</span>';
+	}
+
+/**
+ * add category filter field; called in pageInit()
+ * @returns {Boolean}
+ */
+function addCategoryFilter(){
+    var aLinksCat=document.querySelectorAll('#'+aDomNames['cat']+' a');
+    if(aLinksCat.length<10){
+        return false;
+    }
+    var oCatWidget=document.getElementById(aDomNames['cat']);
+    var sUpdFunction='filterCategories(); return false;';
+    var sLastFilter=localStorage.getItem(aDomNames['catInput']) ? localStorage.getItem(aDomNames['catInput']) : '';
+    var sInput='\n\
+        <input type="text" id="'+aDomNames['catInput']+'" style="width:90%;"\n\
+            onchange="'+sUpdFunction+'" \n\
+            onkeyup="'+sUpdFunction+'"\n\
+            value="'+sLastFilter+'"\n\
+            ><br><br>';
+    oCatWidget.innerHTML=oCatWidget.innerHTML.replace('</h4>', '</h4>'+sInput);
+    filterCategories();
+    return true;
+}
+
+/**
+ * callback function for change events in category input filter field
+ * @returns {undefined}
+ */
+function filterCategories(){
+    var sTerm=document.getElementById(aDomNames['catInput']).value;
+    var re = new RegExp(sTerm, 'i');
+    var aKw=new Array();
+    aKw=sTerm.split(" ");
+    console.log(aKw);
+    var aLinksCat=document.querySelectorAll('#'+aDomNames['cat']+' a');
+    var bVisible=false;
+    for(var j=0; j<aLinksCat.length; j++){
+        bVisible=!sTerm || aLinksCat[j].innerText.indexOf(sTerm)>=0 || re.test(aLinksCat[j].innerText);
+        aLinksCat[j].style=bVisible ? 'display: block' : 'display: none';
+        aLinksCat[j].innerHTML=aLinksCat[j].innerText.replace('&gt;', '');
+        aLinksCat[j].innerHTML=aLinksCat[j].innerHTML.highlight(aKw, c);
+    }
+    localStorage.setItem(aDomNames['catInput'], sTerm);
+}
 
 /**
  * get link object in the category widget that contains the currently
@@ -46,7 +109,7 @@ function getCategoryLink(){
         return false;
     }
     
-    var aLinks=document.querySelectorAll('#'+aDivs['cat']+' a[href*="'+selector+'"]');
+    var aLinks=document.querySelectorAll('#'+aDomNames['cat']+' a[href*="'+selector+'"]');
     return aLinks[0];
 }
 
@@ -69,7 +132,7 @@ function highlightItem(entry){
         if(regexCatA.test(aLinks[i].href)
                 ||regexCatB.test(aLinks[i].href)
         ){
-                var aLinksCat=document.querySelectorAll('#widget-categories a[href="'+aLinks[i].href+'"]');
+                var aLinksCat=document.querySelectorAll('#'+aDomNames['cat']+' a[href="'+aLinks[i].href+'"]');
                 for(var j=0; j<aLinksCat.length; j++){
                         aLinksCat[j].className=markClass;
                 }
@@ -80,8 +143,8 @@ function highlightItem(entry){
     var y=entry.substr(5,2); // cut year from entry190521-083200
     var m=entry.substr(7,2);
 
-    var sQueryT1='#widget-archives a[href*="y:'+y+';m:'+m+'"]'; // ?x=y:19;m:05
-    var sQueryT2='#widget-archives a[href*="/20'+y+'/'+m+'/"]';
+    var sQueryT1='#'+aDomNames['archive']+' a[href*="y:'+y+';m:'+m+'"]'; // ?x=y:19;m:05
+    var sQueryT2='#'+aDomNames['archive']+' a[href*="/20'+y+'/'+m+'/"]';
 
     var aLinksTime=document.querySelectorAll(sQueryT1);
     for(var j=0; j<aLinksTime.length; j++){
@@ -160,5 +223,6 @@ function pageInit(){
         oLinkCat.className='active';
         setHeaderLabel(oLinkCat.innerHTML);
     }
+    addCategoryFilter();
     highlightMenubar();
 }

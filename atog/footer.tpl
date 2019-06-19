@@ -25,20 +25,20 @@
 
         
                 <script>
+                    pageInit();
                     
                     {if $flatpress.params.entry}
                         highlightItem("{$flatpress.params.entry}");
                     {else}
                         {if $flatpress.params.y}
-                            setActive(
+                            activateArchiveLink(
                                 'widget-archives', 
-                                'x=y:{$flatpress.params.y}{if $flatpress.params.m};m:{$flatpress.params.m}{/if}', 
-                                '20{$flatpress.params.y}{if $flatpress.params.m}/{$flatpress.params.m}{/if}'
+                                '{$flatpress.params.y}',
+                                '{if $flatpress.params.m}{$flatpress.params.m}{/if}'
                             );
                         {/if}
                     {/if}
-                        
-                    pageInit();
+
                 </script>
 	</div>
 </body>

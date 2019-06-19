@@ -19,8 +19,8 @@
 
 
 .alignleft { float: left }
-
 .alignright { float: right }
+.alignleft, .alignright {max-width: 48%; }
 
 /* ===== NOTIFICATION ===== */
 

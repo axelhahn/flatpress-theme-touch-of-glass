@@ -26,7 +26,7 @@ $theme ['author'] = 'Axel Hahn';
 $theme ['www'] = 'https://www.axel-hahn.de/';
 $theme ['description'] = 'Axels theme Touch Of Glass';
 
-$theme ['version'] = 0.705;
+$theme ['version'] = 1.000;
 
 $theme ['style_def'] = 'style.css';
 $theme ['style_admin'] = 'admin.css';

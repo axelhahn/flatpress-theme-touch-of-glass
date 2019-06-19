@@ -367,6 +367,7 @@ h2.date {
     border: 0px solid rgba(0,0,0,0.1);
     box-shadow: 0 0 1em rgba(0,0,0,0.15);
     padding: 0.5em;
+    display: inline-block;
 }
 .navigation a:hover{
     box-shadow: 0 0 0.5em rgba(0,0,0,0.1);

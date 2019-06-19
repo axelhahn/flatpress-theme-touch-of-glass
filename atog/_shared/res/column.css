@@ -67,17 +67,24 @@ div.column .wrapper>div{
 
 /* ------ icons in widget box headers ----- */
 
-.column h4:before{
+.column h4:before, .column a:before{
     font-family: 'Font Awesome 5 Free';
     margin-right: 0.3em;
-    font-size: 130%;
     opacity: 0.4;
+}
+.column h4:before{
+    font-size: 130%;
 }
 .column #widget-adminarea h4:before{content:'';}
 .column #widget-archives h4:before{content:'';}
 .column #widget-categories h4:before{content:'';}
 .column #widget-lastentries h4:before{content:'';}
 .column #widget-searchbox h4:before{content:'';}
+
+div.wrapper>div>ul>li>a:before{content:''; opacity: 0.2;}
+div.wrapper>div#widget-categories>ul>li>a:before{content:'';}
+div.wrapper>div#widget-archives>ul>li>a:before{content:''; font-weight: normal;}
+
 
 .column p, .column div { 
     border: 0px solid #ccc; 
@@ -87,8 +94,12 @@ div.column .wrapper>div{
 
 .column a:link, .column a:visited { display: block; padding: 0.2em 0.5em;}
 .column a:hover{ background: rgba(0,0,0,0.04); }
-.column a.active{ background: linear-gradient(90deg, rgba(0,0,0,0.08), rgba(0,0,0,0.02), rgba(0,0,0,0.08)); border-right: 3px solid;}
+.column a.active{ background: linear-gradient(90deg, rgba(0,0,0,0.08), rgba(0,0,0,0.02), rgba(0,0,0,0.08)); border-right: 3px solid rgba(0,0,0,0.0);}
 .column a.mark{ background: linear-gradient(90deg, rgba(0,0,0,0.05), rgba(0,0,0,0.02)); border-right: 3px dotted;}
+
+.column a.openclose{transition: all ease-in-out 0.2s; opacity: 0.5;}
+.column a.openclose-open{transform: rotate(0deg); opacity: 0.2;}
+.column a.openclose-close{transform: rotate(45deg); color:#a44;}
 
 /* === List === */
 .column ul li table { font-size: 100% }
@@ -99,6 +110,11 @@ div.column .wrapper>div{
     margin-bottom: .5em;
     padding-left: 0;
 }
+div.wrapper>div>ul>li>a{
+    font-weight: bold;
+}
+
+
 .column ul ul{
     padding-left: 1em;
 }

@@ -27,7 +27,7 @@ $style ['name'] = 'blue';
 $style ['author'] = 'Axel Hahn';
 $style ['www'] = 'https://www.axel-hahn.de/';
 
-$style ['version'] = 0.705;
+$style ['version'] = 1.000;
 
 $style ['style_def'] = 'style.css';
 $style ['style_admin'] = 'admin.css';

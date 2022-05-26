@@ -34,9 +34,33 @@ This theme offers a clean blog like frontend. This theme was made because
 
 ## Installation
 
+**Get the files**
+
+The manual way 1:
+
+- go to <https://github.com/axelhahn/flatpress-theme-touch-of-glass>
+- Download the repository as zip 
+- extract it
+
+OR the manual way 2:
+
+- `git clone https://github.com/axelhahn/flatpress-theme-touch-of-glass.git`
+
+
+Then copy the files to flatpress theme folder
+
 - Copy the theme folder "atog" below ./fp-interface/themes/
+
+**Activate theme**
+
 - Go to the admin of flatpress -> theme and select the theme "Axel's theme A Touch Of Glass" to activate it
 - optionally select a wanted style
+
+## Update theme
+
+- Get a new copy of the repository (see installation)
+- in flatpress folder delete ./fp-interface/themes/atog/
+- Copy the new files in theme folder "atog" below ./fp-interface/themes/
 
 ## Screenshots
 

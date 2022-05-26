@@ -56,8 +56,6 @@ div.column .wrapper>div{
     box-shadow: 0 0 1em rgba(0,0,0,0.1);
 }
 
-
-
 .column h4 {
     /* Titles of the sections */
     border-bottom: 2px dotted rgba(0,0,0,0.1);
@@ -86,7 +84,7 @@ div.wrapper>div#widget-categories>ul>li>a:before{content:'';}
 div.wrapper>div#widget-archives>ul>li>a:before{content:''; font-weight: normal;}
 
 
-.column p, .column div { 
+.column p, .column div div {
     border: 0px solid #ccc; 
     margin-bottom: 1em;
     padding: 0.5em;
@@ -122,3 +120,67 @@ div.wrapper>div>ul>li>a{
 .column fieldset { margin: 0 5px 0 5px }
 
 .column legend { font-size: 100% }
+
+/*
+    Responsive additions
+*/
+
+input.menu-input{display: none;}
+
+/** below width of 1600 px --> smaller left and right column */
+@media screen and (max-width: 1600px) {
+    .colleft .wrapper, .colright .wrapper{
+        width: 15em;
+    }
+}
+
+/** below width of 1300 px --> smaller left and right column */
+@media screen and (max-width: 1300px) {
+    #body-container {
+        margin: 1% 2%;
+    }
+    .colleft .wrapper, .colright .wrapper{
+        width: 12em;
+    }
+}
+
+/** below width of 800 px --> middle column only + hamburger menu */
+@media screen and (max-width: 800px) {
+    #body-container {margin: 1%;}
+    #head{margin: 0 0 1em; padding: 0.5em;}
+    .colmiddle > * {
+        margin-left: 0.3em;
+        margin-right: 0.3em;
+    }
+    .column > label > div{
+        opacity: 0.1;
+        position: absolute;
+        margin-top: -1em;
+        background: #fff;
+        transition: all 0.5s;
+    }
+    .column div.wrapper{
+        width: 100%;
+        margin: 0;
+    }
+    .column div.wrapper > div {
+        box-shadow: none;
+    }
+    .column label{
+        display: block;
+        width: 15px;
+        height: 15px;
+        background: linear-gradient( to bottom, var(--color-h4), var(--color-h4) 20%, white 20%, white 40%, var(--color-h4) 40%, var(--color-h4) 60%, white 60%, white 80%, var(--color-h4) 80%, var(--color-h4) 100% );
+    }
+
+    .colleft > label > div{
+        left: -100%;
+        right: 100%;
+    }
+    .colright > label > div{
+        left: 100%;
+        right: -100%;
+    }
+    .menu-input:checked + label div{opacity: 1; left: 0; right: 0;}
+}
+

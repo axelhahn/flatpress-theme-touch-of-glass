@@ -1,25 +1,35 @@
 		
                 <div class="column colleft">
-                    {widgets pos=left}
-                    <div class="wrapper">
-                        <div id="{$id}">		
-                            <h4>{$subject}</h4>
-                            {$content}
+                    <input type="checkbox" id="colleft-menu" class="menu-input noprint" />
+                    <label for="colleft-menu">
+                        <div>
+                            {widgets pos=left}
+                            <div class="wrapper">
+                                <div id="{$id}">
+                                    <h4>{$subject}</h4>
+                                    {$content}
+                                </div>
+                            </div>
+                            {/widgets}
                         </div>
-                    </div>
-                    {/widgets}
+                    </label>
                 </div>
 
                 <div class="column colright">
-		
-                    {widgets pos=right}	
-                    <div class="wrapper">
-                        <div id="{$id}">
-                            <h4>{$subject}</h4>
-                            {$content}
+                    <input type="checkbox" id="colright-menu" class="menu-input noprint" />
+                    <label for="colright-menu">
+                        <div>
+                            {widgets pos=right}
+                            <div class="wrapper">
+                                <div id="{$id}">
+                                    <h4>{$subject}</h4>
+                                    {$content}
+                                </div>
+                            </div>
+                            {/widgets}
                         </div>
-                    </div>
-                    {/widgets}
+                    </label>
 		
-		</div>
+		        </div>
 
+                <div class="spacer"></div>

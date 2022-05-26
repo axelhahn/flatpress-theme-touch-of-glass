@@ -46,8 +46,7 @@ OR the manual way 2:
 
 - `git clone https://github.com/axelhahn/flatpress-theme-touch-of-glass.git`
 
-
-Then copy the files to flatpress theme folder
+**Copy the files**
 
 - Copy the theme folder "atog" below ./fp-interface/themes/
 
@@ -61,6 +60,7 @@ Then copy the files to flatpress theme folder
 - Get a new copy of the repository (see installation)
 - in flatpress folder delete ./fp-interface/themes/atog/
 - Copy the new files in theme folder "atog" below ./fp-interface/themes/
+- Open your Flatpress instance in a webbrowser and reload with Shift + Reload to override the browser cache.
 
 ## Screenshots
 

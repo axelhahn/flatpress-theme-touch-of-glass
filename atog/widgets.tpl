@@ -1,7 +1,7 @@
 		
                 <div class="column colleft">
                     <input type="checkbox" id="colleft-menu" class="menu-input noprint" />
-                    <label for="colleft-menu">
+                    <label for="colleft-menu" id="colleft-label">
                         <div>
                             {widgets pos=left}
                             <div class="wrapper">
@@ -17,7 +17,7 @@
 
                 <div class="column colright">
                     <input type="checkbox" id="colright-menu" class="menu-input noprint" />
-                    <label for="colright-menu">
+                    <label for="colright-menu" id="colright-label">
                         <div>
                             {widgets pos=right}
                             <div class="wrapper">

@@ -299,6 +299,19 @@ function toggleArchive(idYearBtn, bDrawOnly = false) {
     oButton.className = 'openclose ' + (aUL[0].style.display ? 'openclose-open' : 'openclose-close');
 }
 
+/**
+ * hide hamburger menu if it has no div.wrapper in this column
+ * @param {string} sSide define column; one of left|right
+ * @returns {Boolean}
+ */
+function checkHamburger(sSide){
+    if(!document.querySelector('div.col'+sSide+' .wrapper')){
+        document.getElementById('col'+sSide+'-label').style.display='none';
+        return false;
+    }
+    return true;
+}
+
 // ----------------------------------------------------------------------
 // 
 // ----------------------------------------------------------------------
@@ -312,6 +325,8 @@ function pageInit() {
     activateMenubar();
     addCategoryFilter();
     addTimeFolds();
+    checkHamburger('left');
+    checkHamburger('right');
 }
 
 // ----------------------------------------------------------------------

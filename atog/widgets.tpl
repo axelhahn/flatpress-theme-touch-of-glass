@@ -31,5 +31,3 @@
                     </label>
 		
 		        </div>
-
-                <div class="spacer"></div>

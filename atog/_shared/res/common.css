@@ -96,6 +96,7 @@ input, textarea, select {
     border-radius: 0.3em;
     color: #222;
     background-color: #fff;
+    max-width: 90%;
 }
 
 input:hover, input:focus, textarea:hover, textarea:focus {

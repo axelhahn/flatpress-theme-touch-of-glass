@@ -137,40 +137,39 @@ input.menu-input{display: none;}
 /** below width of 1300 px --> smaller left and right column */
 @media screen and (max-width: 1300px) {
     #body-container {
-        margin: 1% 2%;
+        margin: 1% 2% 4%;
     }
+    #head{margin: 0 0 0.8em;}
     .colleft .wrapper, .colright .wrapper{
         width: 12em;
+        margin: 0;
     }
 }
 
 /** below width of 800 px --> middle column only + hamburger menu */
 @media screen and (max-width: 800px) {
-    #body-container {margin: 1%;}
-    #head{margin: 0 0 1em; padding: 0.5em;}
+    #body-container {margin: 1% 1% 4%;}
+    #head{margin: 0 0 0.5em; padding: 0.5em;}
     .colmiddle > * {
         margin-left: 0.3em;
         margin-right: 0.3em;
-    }
-    .column > label > div{
-        opacity: 0.1;
-        position: absolute;
-        margin-top: -1em;
-        background: #fff;
-        transition: all 0.5s;
-    }
-    .column div.wrapper{
-        width: 100%;
-        margin: 0;
-    }
-    .column div.wrapper > div {
-        box-shadow: none;
     }
     .column label{
         display: block;
         width: 15px;
         height: 15px;
+        cursor: pointer;
         background: linear-gradient( to bottom, var(--color-h4), var(--color-h4) 20%, white 20%, white 40%, var(--color-h4) 40%, var(--color-h4) 60%, white 60%, white 80%, var(--color-h4) 80%, var(--color-h4) 100% );
+    }
+    .column > label > div{
+        cursor: default;
+        opacity: 0;
+        position: absolute;
+        margin-top: -0.5em;
+        background: #fff;
+        border-bottom: 3px solid var(--color-h4);
+        box-shadow: 0 0.5em 1em rgba(0,0,0,0.1);
+        transition: all 0.5s;
     }
 
     .colleft > label > div{
@@ -182,5 +181,13 @@ input.menu-input{display: none;}
         right: -100%;
     }
     .menu-input:checked + label div{opacity: 1; left: 0; right: 0;}
+
+    .column div.wrapper{
+        width: 100%;
+        margin: 0;
+    }
+    .column div.wrapper > div {
+        box-shadow: none;
+    }
 }
 

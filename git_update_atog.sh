@@ -7,6 +7,7 @@
 #
 # ----------------------------------------------------------------------
 # 2022-05-26  v1.0
+# 2022-06-15  v1.1  remove which and use --version param
 # ======================================================================
 
 # ----------------------------------------------------------------------
@@ -15,7 +16,7 @@
 
 readonly git_repo_url="https://github.com/axelhahn/flatpress-theme-touch-of-glass.git"
 readonly line="____________________________________________________________"
-readonly version="1.0"
+readonly version="1.1"
 
 git_target=/tmp/git_data__atog
 client_from="${git_target}/atog"
@@ -107,8 +108,8 @@ ENDOFHELP
         fi
 esac
 
-which rsync >/dev/null || exit 1
-which git >/dev/null || exit 1
+rsync --version >/dev/null || exit 1
+git --version >/dev/null || exit 1
 
 echo $line
 echo ">>> #1 of 3 >>> update local git data"

@@ -70,18 +70,4 @@ OR the manual way 2:
 
 ### Styles
 
-Red:
-
-![Client](atog/red/preview.png "Red")
-
-Sunny:
-
-![Client](atog/sunny/preview.png "Sunny")
-
-Teal:
-
-![Client](atog/teal/preview.png "Teal")
-
-latest style is White: 
-
-![Client](atog/white/preview.png "White")
+![Client](atog/red/preview.png "Red") ![Client](atog/sunny/preview.png "Sunny") ![Client](atog/teal/preview.png "Teal") ![Client](atog/white/preview.png "White")

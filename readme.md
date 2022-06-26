@@ -83,4 +83,5 @@ Teal:
 ![Client](atog/teal/preview.png "Teal")
 
 latest style is White: 
+
 ![Client](atog/white/preview.png "White")

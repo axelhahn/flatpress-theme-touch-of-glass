@@ -18,7 +18,7 @@
  * 
  * Style Name: White
  * Style URI: https://github.com/axelhahn/flatpress-theme-touch-of-glass
- * Description: Axels theme Touch Of Glass simple and lightweight 
+ * Description: Simpler, more lightweight Style
  * Version: 1.000
  * Author: Axel Hahn
  * Author URI: https://www.axel-hahn.de/

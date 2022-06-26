@@ -12,7 +12,7 @@
  *       |_______||__|      |_______|__||___._|_____|_____|
  * ___________________________________________________________________________
  * 
- * B L U E
+ * W H I T E
  * ___________________________________________________________________________
  * 
 */
@@ -24,18 +24,22 @@
 */
 :root {
     --bg-color-top:#e8eaf0;
-    --bg-color-bottom:#fff;
+    --bg-color-bottom:#f8f8fa;
 
-    --bg-color-head-1:#e8f0f0;
-    --bg-color-head-2:#f8f8ff;
 
-    --color-a:#349;
+    --bg-color-head-1:#d8e6f0;
+    --bg-color-head-2:#f0f8fa;
+
+    --color-a:#369;
     --color-a-hover:#89d;
 
     --color-h3:#ff6d00;
-    --color-h3:#334;
+    --color-h3:#778;
     --color-h4:#556;
     --color-h4-icon:#468;
+
+    --bg-color-col-active:#e0e8f0;
+    --bg-color-col-mark:#f0f4f8;
 }
 /*
 
@@ -71,9 +75,16 @@ h4::before {
 }
 
 .column a.active, .column a.active {
+    border-right: none;
+	background: linear-gradient(90deg, rgba(0,40,120,0.1), rgba(0,0,0,0.02)  );
+	background: var(--bg-color-col-active);
+    
     border-right-color: var(--color-h4);
 }
-
+.column a.mark {
+	background: var(--bg-color-col-mark);
+	border-right: none;
+}
 #comments li.comment-admin {
     border-color: var(--color-h4);
 }
@@ -93,14 +104,14 @@ div.column .wrapper > div {
 	box-shadow: none;
 }
 #head{
-    color: #333;
+    color: #778;
 }
 #head a {
 	color: var(--color-a);
 	text-decoration: none;
 }
 .subtitle {
-	color: #333;
+	color: #234;
 }
 .entry {
 	box-shadow: none;

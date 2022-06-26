@@ -64,7 +64,23 @@ OR the manual way 2:
 
 ## Screenshots
 
+### Default theme
+
 ![Client](atog/blue/preview.png "Blue (default skin)")
+
+### Styles
+
+Red:
+
 ![Client](atog/red/preview.png "Red")
+
+Sunny:
+
 ![Client](atog/sunny/preview.png "Sunny")
+
+Teal:
+
 ![Client](atog/teal/preview.png "Teal")
+
+latest style is White: 
+![Client](atog/white/preview.png "White")

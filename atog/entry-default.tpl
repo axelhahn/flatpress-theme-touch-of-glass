@@ -12,7 +12,7 @@
 				{$subject|tag:the_title}
 				</a>
 				</h3>
-				{include file=shared:entryadminctrls.tpl}
+				{include file='shared:entryadminctrls.tpl'}
                                 <div class="date">
                                 {$date|date_format_daily:"<i class=\"far fa-calendar-alt\"></i> `$fp_config.locale.dateformat`"}
                                 </div>
@@ -70,7 +70,7 @@
                                 {$url|notempty:"<a href=\"$url\" rel=\"nofollow\" title=\"Visit $url\">$name</a>"|default:$name}
                                 </strong>
 
-                                {include file=shared:commentadminctrls.tpl} {* this shows edit/delete links*}
+                                {include file='shared:commentadminctrls.tpl'} {* this shows edit/delete links*}
 
                                 <p class="date">
                                 <a href="{$entryid|link:comments_link}#{$id}" title="Permalink to {$name}'s comment">{$date|date_format:"%A, %B %e, %Y - %H:%M:%S"}</a>

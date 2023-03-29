@@ -1,19 +1,19 @@
-{include file=header.tpl}
+{include file='header.tpl'}
 
-		{include file=widgets.tpl}
+		{include file='widgets.tpl'}
                 
 		<div id="main" class="colmiddle">
                     {entry_block}
                         {entry}
 
-                            {include file=entry-default.tpl}
+                            {include file='entry-default.tpl'}
 
                         {/entry}
 
 
                     {/entry_block}
 
-                    {include file="shared:comment-form.tpl"}
+                    {include file='shared:comment-form.tpl'}
                     
                     <div class="navigation">
                             {nextpage}{prevpage}
@@ -22,4 +22,4 @@
 		</div>
 	<hr />
 	
-{include file=footer.tpl}
+{include file='footer.tpl'}

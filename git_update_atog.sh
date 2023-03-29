@@ -8,6 +8,7 @@
 # ----------------------------------------------------------------------
 # 2022-05-26  v1.0
 # 2022-06-15  v1.1  remove which and use --version param
+# 2023-03-29  v1.2  update output of step 2
 # ======================================================================
 
 # ----------------------------------------------------------------------
@@ -16,7 +17,7 @@
 
 readonly git_repo_url="https://github.com/axelhahn/flatpress-theme-touch-of-glass.git"
 readonly line="____________________________________________________________"
-readonly version="1.1"
+readonly version="1.2"
 
 git_target=/tmp/git_data__atog
 client_from="${git_target}/atog"
@@ -125,7 +126,7 @@ echo
 
 
 echo $line
-echo ">>> #2 of 3 >>> Sync files of Appmonitor client"
+echo ">>> #2 of 3 >>> Sync files"
 echo
 echo "FROM $client_from/*" 
 echo "TO   $client_to"

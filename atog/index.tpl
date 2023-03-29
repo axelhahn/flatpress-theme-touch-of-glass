@@ -1,6 +1,6 @@
-{include file=header.tpl}
+{include file='header.tpl'}
 
-		{include file=widgets.tpl}
+		{include file='widgets.tpl'}
                 
 		<div id="main" class="colmiddle">
                 
@@ -19,4 +19,4 @@
 		</div>
 			
 
-{include file=footer.tpl}
+{include file='footer.tpl'}

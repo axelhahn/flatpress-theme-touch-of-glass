@@ -1,6 +1,6 @@
-{include file=header.tpl}
+{include file='header.tpl'}
 	
-		{include file=widgets.tpl}
+		{include file='widgets.tpl'}
                 
 		<div id="main" class="colmiddle">
 				
@@ -10,7 +10,7 @@
 				<div class="body">
 				
 				{if $rawcontent} {$content}
-				{else}	{include file=$content}{/if}
+				{else}	{include file='$content'}{/if}
 				
 				</div>
 			</div>
@@ -18,7 +18,7 @@
                 </div>
 
 			
-{include file=footer.tpl}
+{include file='footer.tpl'}
 
 
 

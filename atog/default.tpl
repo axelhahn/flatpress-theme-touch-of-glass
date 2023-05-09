@@ -9,8 +9,8 @@
 				<h3 class="title">{$subject}</h3>
 				<div class="body">
 				
-				{if $rawcontent} {$content}
-				{else}	{include file='$content'}{/if}
+				{if isset($rawcontent) and $rawcontent} {$content}
+				{else}	{include file=$content}{/if}
 				
 				</div>
 			</div>

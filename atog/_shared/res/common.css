@@ -109,13 +109,13 @@ input[type=radio]{
 input[type=submit]{
     background: #fff;
     border: 2px solid #5a7;
-    border-radius: 2em;
+    border-radius: 0.2em;
     margin-left: 0.5em;
     padding: 0.5em;
     box-shadow: 0 0 1em rgba(0,0,0,0.3);
 }
 input[type=submit]:hover{
-    background: #5a7;
+    background: #adb;
     border: 2px solid rgba(0,0,0,0.3);
     box-shadow: 0 0 0.5em rgba(0,0,0,0.3);
 }
@@ -136,11 +136,11 @@ a:link, a:visited {
     color: #349;
     text-decoration: none;
 }
-
 a:hover {
-    color: #89d;
-    text-decoration: underline
+    color: #45d;
+    text-decoration: none;
 }
+#admin-content a[href*=maintain]{ padding: 0.7em 0; display: block;}
 
 
 

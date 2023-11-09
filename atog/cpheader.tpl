@@ -4,10 +4,7 @@
 	<title>{$flatpress.title}{$pagetitle}</title>
 	<meta http-equiv="Content-Type" content="text/html; charset={$flatpress.charset}" />
 
-        <!--
-        <link media="screen" href="{$flatpress.themeurl}/../../_shared/vendor/font-awesome/5.8.2/css/all.min.css" type="text/css" rel="stylesheet" />
-        -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         <link media="screen" href="{$flatpress.themeurl}/../../_shared/res/common.css" type="text/css" rel="stylesheet" />
         <link media="screen" href="{$flatpress.themeurl}/../../_shared/res/globals.css" type="text/css" rel="stylesheet" />

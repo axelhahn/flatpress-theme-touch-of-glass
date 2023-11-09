@@ -75,6 +75,7 @@ div.column .wrapper>div{
 }
 .column #widget-adminarea h4:before{content:'';}
 .column #widget-archives h4:before{content:'';}
+.column #widget-calendar h4:before{content:'';}
 .column #widget-categories h4:before{content:'';}
 .column #widget-lastentries h4:before{content:'';}
 .column #widget-searchbox h4:before{content:'';}
@@ -83,6 +84,8 @@ div.wrapper>div>ul>li>a:before{content:''; opacity: 0.2;}
 div.wrapper>div#widget-categories>ul>li>a:before{content:'';}
 div.wrapper>div#widget-archives>ul>li>a:before{content:''; font-weight: normal;}
 
+.column #widget-lastentries a[href*=admin]:link   { float: right; padding: 0;font-weight: normal;}
+.column #widget-lastentries a[href*=admin]:before { content:''; }
 
 .column p, .column div div {
     border: 0px solid #ccc; 

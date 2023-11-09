@@ -6,6 +6,7 @@ This is a theme for the blog software flatpress (<https://www.flatpress.org/>).
 My theme is based on the code of Leggero theme. Thanks go to NoWhereMan and Drudo!!
 
 This theme offers a clean blog like frontend. This theme was made because
+
 - I wanted a larger font size and 
 - I need wider space for the posts
 - a selected category or selected year+month is not highlighted or shown in Flatpress
